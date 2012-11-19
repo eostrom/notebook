@@ -1,0 +1,17 @@
+/*
+ *= require normalize
+ *
+ * Note: Bourbon and Neat provide files with .scss extensions, but we
+ * need .css.scss. To convert them:
+ 
+ find vendor/assets/stylesheets/bourbon -name '*.scss' | \
+   sed -e 's/\(.*\)\.scss$/mv \1.scss \1.css.scss/' | sh
+ find vendor/assets/stylesheets/neat -name '*.scss' | \
+   sed -e 's/\(.*\)\.scss$/mv \1.scss \1.css.scss/' | sh
+ */
+
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+
+@import 'layout';
+
