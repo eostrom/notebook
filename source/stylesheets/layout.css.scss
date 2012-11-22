@@ -2,8 +2,20 @@ body {
   @include outer-container;
 }
 
+header {
+  padding: $gutter;
+}
+
 #main {
   @include span-columns(9);
+}
+
+article {
+  border-radius: $gutter;
+  padding: $gutter;
+  margin: $gutter 0;
+  h2 { margin-top: 0; }
+  > :last-child { margin-bottom: 0; }
 }
 
 aside {

@@ -1,0 +1,42 @@
+$background-color: hsl(253, 100%, 93%);
+$header-color: hsl(60, 100%, 95%);
+$link-color: #b372c7;
+
+html {
+  background: $background-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $header-color;
+}
+
+a:link { color: $link-color; }
+a:visited { color: #9f9ab3; }
+
+header {
+  background: url(/images/Dirty_Graph_Paper_Texture_by_angelandspot.jpg)
+    100% 2%
+    $header-color;
+
+  a:link, a:visited {
+    color: $link-color;
+    text-decoration: none;
+  }
+}
+
+article {
+  background: #9f9ab3;
+  a:link, a:visited {
+    color: $background-color;
+    text-decoration: none;
+  }
+}
+
+/** ColorBlender recommends:
+ * #9f9ab3 (greyish purple)
+ * white
+ * #b3b3b3
+ * black
+ * more white
+ */
+

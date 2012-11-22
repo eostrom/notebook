@@ -7,23 +7,26 @@
     = stylesheet_link_tag 'application'
 
   %body
+    %header
+      %h1= link_to 'A notebook.', '/'
+
     #main{:role => "main"}
       = yield
     %aside
-      %h2 Recent Articles
+      %h2 What else is new?
       %ol
         - blog.articles[0...10].each do |article|
           %li
             %a{:href => article.url}= article.title
             %span= article.date.strftime('%b %e')
-      %h2 Tags
+      %h2 What's all this?
       %ol
         - blog.tags.each do |tag, articles|
           %li
             %a{:href => tag_path(tag)}
               = tag
               (#{articles.size})
-      %h2 By Year
+      %h2 Remember when?
       %ol
         - blog.articles.group_by {|a| a.date.year }.each do |year, articles|
           %li

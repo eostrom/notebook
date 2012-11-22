@@ -10,9 +10,14 @@
    sed -e 's/\(.*\)\.scss$/mv \1.scss \1.css.scss/' | sh
  */
 
+/*$visual-grid: true;*/
+
 @import 'bourbon/bourbon';
 @import 'neat/neat';
 
 @import 'layout';
 @import 'type';
+@import 'color';
+
+@import 'sidebar';
 
