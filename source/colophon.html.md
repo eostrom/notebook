@@ -1,3 +1,8 @@
+---
+title: Colophon
+layout: article
+---
+
 Some of the tools and resources used to create this web site:
 
 * [Inconsolata](http://levien.com/type/myfonts/inconsolata.html)
