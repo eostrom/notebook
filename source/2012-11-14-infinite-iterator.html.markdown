@@ -1,5 +1,5 @@
 ---
-title: infinite iterator
+title: Infinite Iterator
 date: 2012-11-14 00:12 -06:00
 tags: ruby, tricks, loops
 ---
@@ -12,4 +12,4 @@ tags: ruby, tricks, loops
 >     three
 >     one
 > 
-> -- James Edward Gray II, &ldquo;['10' Things You Didn't Know Ruby Could Do](https://speakerdeck.com/jeg2/10-things-you-didnt-know-ruby-could-do)&rdquo;
+> -- James Edward Gray II, &ldquo;[<s>10</s> Things You Didn't Know Ruby Could Do](https://speakerdeck.com/jeg2/10-things-you-didnt-know-ruby-could-do)&rdquo;
