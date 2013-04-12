@@ -3,7 +3,7 @@ body {
 }
 
 header {
-  padding: $gutter;
+  padding: golden-ratio($gutter, -1);
 }
 
 #main {
