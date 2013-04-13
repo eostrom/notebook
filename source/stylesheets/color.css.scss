@@ -1,6 +1,7 @@
-$background-color: hsl(253, 100%, 93%);
-$header-color: hsl(60, 100%, 95%);
-$link-color: #b372c7;
+$background-color: rgb(212, 200, 253);
+$header-color: rgb(245, 236, 222);
+/*$header-color: rgb(245, 228, 201);*/
+$link-color: rgb(145, 114, 199);
 
 html {
   background: $background-color;
@@ -27,9 +28,10 @@ header {
 article {
   background: #9f9ab3;
   a:link, a:visited {
-    color: $background-color;
+    color: $header-color;
     text-decoration: none;
   }
+  h2, h3, h4 { color: $background-color }
 }
 
 /** ColorBlender recommends:
