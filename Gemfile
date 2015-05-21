@@ -9,3 +9,5 @@ gem "builder", "~> 3.2.2"
 
 gem 'neat'
 gem 'nokogiri' # for blog post summaries
+
+gem 'rack-contrib'
