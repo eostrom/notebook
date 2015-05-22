@@ -1,4 +1,7 @@
+- title = current_page.data[:title]
+
 = wrap_layout :layout do
   %article
-    %h2= link_to current_page.data[:title], ''
+    - unless title.blank?
+      %h2= link_to current_page.data[:title], ''
     = yield
