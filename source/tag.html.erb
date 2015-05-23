@@ -15,7 +15,7 @@ layout: article
 
 <ul>
   <% page_articles.each_with_index do |article, i| %>
-    <li><%= link_to article.title, article %> <span><%= format_date(article.date) %></span></li>
+    <li><%= link_to summary_title(article), article %> <span><%= format_date(article.date) %></span></li>
   <% end %>
 </ul>
 

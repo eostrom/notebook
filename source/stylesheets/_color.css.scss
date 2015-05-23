@@ -40,6 +40,10 @@ article {
   h2, h3, h4 { color: $background-color }
 }
 
+pre {
+  background: $background-color;
+}
+
 /** ColorBlender recommends:
  * #9f9ab3 (greyish purple)
  * white

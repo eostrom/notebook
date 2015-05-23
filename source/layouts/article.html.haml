@@ -1,7 +1,15 @@
 - title = current_page.data[:title]
+- subtitle = current_page.data[:subtitle]
+- date = current_page.date if current_page.respond_to? :date
 
 = wrap_layout :layout do
   %article
     - unless title.blank?
-      %h2= link_to current_page.data[:title], ''
-    = yield
+      %h2
+        = link_to title, ''
+        - if subtitle
+          %br
+          = subtitle
+      - if date
+        %h3 #{format_date(current_page.date)}.
+    ~ yield

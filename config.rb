@@ -71,11 +71,15 @@ page "/feed.xml", :layout => false
 
 # Methods defined in the helpers block are available in templates
 helpers do
+  def summary_title(page)
+    page.data[:summary_title].presence || page.title
+  end
+
   def format_date(date, how = :long)
     if how == :short
-      date.strftime('%b %e')
+      date.strftime('%b&nbsp;%e')
     else
-      date.strftime('%b %e %Y')
+      date.strftime('%b&nbsp;%e&nbsp;%Y')
     end
   end
 end
