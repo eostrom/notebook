@@ -2,9 +2,11 @@ $background-color: rgb(212, 200, 253);
 $header-color: rgb(245, 236, 222);
 /*$header-color: rgb(245, 228, 201);*/
 $link-color: rgb(145, 114, 199);
+$text-color: rgb(48, 0, 57);
 
 html {
   background: $background-color;
+  color: $text-color;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -18,6 +20,10 @@ header {
   background: url(/images/Dirty_Graph_Paper_Texture_by_angelandspot.jpg)
     100% 2%
     $header-color;
+
+  h1 {
+    @include transform(rotate(0.3deg));
+  }
 
   a:link, a:visited {
     color: $link-color;
