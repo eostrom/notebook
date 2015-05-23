@@ -1,5 +1,6 @@
-- title = current_page.data[:title]
+- supertitle = current_page.data[:supertitle]
 - subtitle = current_page.data[:subtitle]
+- title = supertitle || current_page.data[:title]
 - date = current_page.date if current_page.respond_to? :date
 
 = wrap_layout :layout do
@@ -11,5 +12,5 @@
           %br
           = subtitle
       - if date
-        %h3 #{format_date(current_page.date)}.
+        %h3 #{format_date(date)}.
     ~ yield

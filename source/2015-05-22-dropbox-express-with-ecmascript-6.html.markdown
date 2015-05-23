@@ -1,7 +1,7 @@
 ---
-title: Dropbox Express with ECMAScript 6+.
+supertitle: Dropbox Express with ECMAScript 6+.
 subtitle: "Part 1: Express, Babel."
-summary_title: "Dropbox Express: Express, Babel."
+title: "Dropbox Express: Express, Babel."
 date: 2015-05-22 21:50 UTC
 tags: node.js, express.js, es.next, babel, eslint
 ---

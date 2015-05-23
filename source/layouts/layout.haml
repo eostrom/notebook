@@ -34,7 +34,7 @@
       %ol
         - blog.articles[0...10].each do |article|
           %li
-            %a{:href => article.url}= summary_title(article)
+            %a{:href => article.url}= article.title
             %span= format_date(article.date, :short)
       %h2 What's all this?
       %ol
