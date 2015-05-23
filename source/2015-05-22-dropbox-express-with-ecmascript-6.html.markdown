@@ -45,6 +45,7 @@ it's easy to get started now by installing [Babel](http://babeljs.io/).
 npm install --save babel
 npm install --save-dev babel-eslint
 ~~~
+{: .language-bash}
 
 (The actual difference between `--save` and `--save-dev` is moot, but I'm
 using it to distinguish between run-time and develop-time dependencies.)
@@ -59,6 +60,7 @@ We need to configure these tools. Create a file `.babelrc`:
   "stage": 1
 }
 ~~~
+{: .language-json}
 
 This tells Babel to enable "stage 1" features (i.e., proposals) from
 ECMAScript 7, specifically [`async/await`][async-await]. It's experimental
@@ -83,6 +85,7 @@ And another file `.eslintrc`:
   }
 }
 ~~~
+{: .language-json}
 
 This a combination of necessary configuration (the parser, the environments)
 and my personal preferences (the rules).

@@ -35,6 +35,7 @@ install them!
 ~~~
 npm install --save-dev zombie mocha
 ~~~
+{: .language-bash}
 
 ## A test, first.
 
@@ -86,7 +87,8 @@ a test command in `package.json`. Edit the "scripts" section:
     "test": "./node_modules/.bin/mocha --harmony --compilers js:babel/register"
   },
 ~~~
-    
+{: .language-json}
+ 
 The `--harmony` flag tells Mocha to use Node's built-in ES6 support, and
 the `--compilers` flag tells it to use Babel. (I don't know why we need
 both.)

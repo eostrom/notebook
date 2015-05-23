@@ -53,6 +53,17 @@ code {
     box-shadow: none;
   }
 }
+
+/* override highlight.js colors */
+
+.hljs {
+  background: transparent;
+}
+
+.hljs, .hljs-subst, .hljs-tag .hljs-title, .nginx .hljs-title {
+  color: $text-color;
+}
+
 /** ColorBlender recommends:
  * #9f9ab3 (greyish purple)
  * white
