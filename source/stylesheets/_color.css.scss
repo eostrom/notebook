@@ -3,6 +3,7 @@ $header-color: rgb(245, 236, 222);
 /*$header-color: rgb(245, 228, 201);*/
 $link-color: rgb(145, 114, 199);
 $text-color: rgb(48, 0, 57);
+$article-background: rgb(159, 154, 179);
 
 html {
   background: $background-color;
@@ -14,7 +15,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a:link { color: $link-color; }
-a:visited { color: #9f9ab3; }
+a:visited { color: $article-background; }
 
 header {
   background: url(/images/Dirty_Graph_Paper_Texture_by_angelandspot.jpg)
@@ -32,7 +33,7 @@ header {
 }
 
 article {
-  background: #9f9ab3;
+  background: $article-background;
   a:link, a:visited {
     color: $header-color;
     text-decoration: none;
@@ -44,6 +45,14 @@ pre {
   background: $background-color;
 }
 
+code {
+  background: rgba($background-color, 0.35);
+  box-shadow: 0 0 0.1em $article-background inset;
+  pre & {
+    background: transparent;
+    box-shadow: none;
+  }
+}
 /** ColorBlender recommends:
  * #9f9ab3 (greyish purple)
  * white
