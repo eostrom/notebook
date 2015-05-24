@@ -1,5 +1,5 @@
 ---
-title: Two's Complement
+title: Two's complement.
 date: 2012-11-27 00:16 -06:00
 tags: math, computer science, binary
 ---

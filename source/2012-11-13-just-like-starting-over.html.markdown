@@ -1,5 +1,5 @@
 ---
-title: Just like starting over
+title: Just like starting over.
 date: 2012-11-13
 tags: meta
 ---

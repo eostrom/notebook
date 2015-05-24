@@ -1,5 +1,5 @@
 ---
-title: git config heroku.remote staging
+title: Heroku default remote.
 date: 2012-11-13 11:39 -06:00
 tags: git, heroku, convenience
 ---

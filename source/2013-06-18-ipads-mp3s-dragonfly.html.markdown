@@ -1,5 +1,5 @@
 ---
-title: iPads, MP3s, Dragonfly
+title: iPads, MP3s, Dragonfly.
 date: 2013-06-18 21:13 UTC
 tags: ruby, audio, heroku, mobile
 ---
