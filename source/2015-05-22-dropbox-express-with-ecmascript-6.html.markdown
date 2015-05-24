@@ -92,7 +92,7 @@ and my personal preferences (the rules).
 
 In [part 2], we'll start developing the app, test-first.
 
-[contact]: mailto:erik@echographia.com "I don't have comments set up yet."
+[contact]: #comments
 [node]: http://nodejs.org/
 [install-express]: http://expressjs.com/starter/installing.html
 [npm-name-format]: https://docs.npmjs.com/files/package.json#people-fields-author-contributors

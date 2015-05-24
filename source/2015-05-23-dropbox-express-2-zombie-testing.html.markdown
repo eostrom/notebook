@@ -136,7 +136,7 @@ At this point, `npm test` still fails, because `browser_context.js`
 requires another file that doesn't exist yet: the actual app. How
 frustrating! We'll write it in [part 3].
 
-[contact]: mailto:erik@echographia.com "I don't have comments set up yet."
+[contact]: #comments
 [part 1]: /2015/05/22/dropbox-express-with-ecmascript-6.html
 [outside-in testing]: https://robots.thoughtbot.com/testing-from-the-outsidein
 [zombie]: http://zombie.js.org/

@@ -83,5 +83,5 @@ your browser. It's so beautiful! Take a moment to breathe it all in.
 
 In part 4, we'll finally start fetching files from Dropbox. 
 
-[contact]: mailto:erik@echographia.com "I don't have comments set up yet."
+[contact]: #comments
 [part 2]: /2015/05/23/dropbox-express-2-zombie-testing.html

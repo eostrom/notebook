@@ -87,7 +87,17 @@ set :js_dir, 'javascripts'
 set :images_dir, 'images'
 
 # Build-specific configuration
+configure :development do
+  activate :disqus do |d|
+    d.shortname = "anotebook-development"
+  end
+end
+
 configure :build do
+  activate :disqus do |d|
+    d.shortname = "anotebook"
+  end
+
   # For example, change the Compass output style for deployment
   # activate :minify_css
   
