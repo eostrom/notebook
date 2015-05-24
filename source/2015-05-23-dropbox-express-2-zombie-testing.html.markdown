@@ -134,7 +134,7 @@ that function, and we run it in our test definition.
  
 At this point, `npm test` still fails, because `browser_context.js`
 requires another file that doesn't exist yet: the actual app. How
-frustrating! We'll write it in part 3.
+frustrating! We'll write it in [part 3].
 
 [contact]: mailto:erik@echographia.com "I don't have comments set up yet."
 [part 1]: /2015/05/22/dropbox-express-with-ecmascript-6.html
@@ -146,3 +146,4 @@ frustrating! We'll write it in part 3.
 [const]: http://es6-features.org/#Constants
 [fat-arrow]: http://es6-features.org/#StatementBodies
 [browsercontext]: http://victorarias.com.br/2014/08/24/end-to-end-testing-with-node-js.html
+[part 3]: /2015/05/24/dropbox-express-3-simplest-app.html
