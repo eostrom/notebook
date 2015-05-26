@@ -54,6 +54,10 @@ code {
   }
 }
 
+blockquote {
+  color: $background-color;
+}
+
 /* override highlight.js colors */
 
 .hljs {
