@@ -3,7 +3,7 @@ supertitle: Dropbox Express with ECMAScript 6+
 subtitle: "Part 2: Zombie testing."
 title: "Dropbox Express 2: Zombie testing."
 date: 2015-05-23 18:18 UTC
-tags: node.js, mocha.js, zombie.js, es.next, babel
+tags: node.js, mocha.js, zombie.js, es.next, babel, testing
 ---
 
 *This is how I built a simple server-side JavaScript app on top of the

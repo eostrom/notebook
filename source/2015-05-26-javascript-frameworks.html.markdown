@@ -1,7 +1,7 @@
 ---
 title: JavaScript frameworks
 date: 2015-05-26 16:03 UTC
-tags:
+tags: javascript, front-end
 ---
 Still loving this line from [@apike]:
 
