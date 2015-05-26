@@ -62,6 +62,12 @@ blockquote {
   color: $background-color;
 }
 
+.pagination {
+  a:link, a:visited {
+    color: $link-color;
+    text-decoration: none;
+  }
+}
 /* override highlight.js colors */
 
 .hljs {

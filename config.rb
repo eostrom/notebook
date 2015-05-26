@@ -20,8 +20,8 @@ activate :blog do |blog|
   blog.tag_template = "tag.html"
   blog.calendar_template = "calendar.html"
 
-  # blog.paginate = true
-  # blog.per_page = 10
+  blog.paginate = true
+  blog.per_page = 5
   # blog.page_link = "page/:num"
 end
 

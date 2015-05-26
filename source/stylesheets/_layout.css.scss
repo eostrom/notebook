@@ -48,4 +48,9 @@ code {
   pre & {
     padding: 0;
   }
-}
+}}
+
+.pagination {
+  @include clearfix;
+  a.prev_page { float: left; }
+  a.next_page { float: right; }
