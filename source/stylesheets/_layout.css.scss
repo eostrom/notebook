@@ -13,7 +13,7 @@ header {
 #main {
   @include span-columns(9);
   @include media($mobile) {
-    @include span-columns(9);
+    @include span-columns(12);
   }
 }
 
@@ -33,7 +33,7 @@ aside {
   @include omega;
 
   @include media($mobile) {
-    @include span-columns(9);
+    @include span-columns(12);
   }
 }
 
