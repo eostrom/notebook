@@ -5,6 +5,10 @@ layout: article
 
 Some of the tools and resources used to create this web site:
 
+* [Middleman](https://middlemanapp.com/) static site generator
+* [Sass](http://sass-lang.com/) CSS extension language
+* [Bourbon](http://bourbon.io/) and [Neat](http://neat.bourbon.io/)
+  by [thoughtbot](https://thoughtbot.com/)
 * [Inconsolata](http://levien.com/type/myfonts/inconsolata.html)
   by [Raph Levien](http://levien.com/)
   via [Google Web Fonts](http://www.google.com/webfonts/specimen/Inconsolata)

@@ -38,6 +38,7 @@
           %li
             %a{:href => article.url}= article.title
             %span= format_date(article.date, :short)
+
       %h2 What's all this?
       %ol
         - blog.tags.each do |tag, articles|
@@ -45,6 +46,9 @@
             %a{:href => tag_path(tag)}
               = tag
               (#{articles.size})
+
+      %h2= link_to 'Colophon', '/colophon.html'
+
       -#%h2 The archive
       -#%ol
         - blog.articles.group_by {|a| a.date.year }.each do |year, articles|
