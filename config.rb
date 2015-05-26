@@ -78,6 +78,10 @@ helpers do
       date.strftime('%b&nbsp;%e&nbsp;%Y')
     end
   end
+
+  def top_tags(blog, count)
+    blog.tags.sort_by { |(tag, articles)| -articles.size }.first(count)
+  end
 end
 
 set :css_dir, 'stylesheets'

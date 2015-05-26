@@ -37,25 +37,25 @@
         - blog.articles[0...10].each do |article|
           %li
             %a{:href => article.url}= article.title
-            %span= format_date(article.date, :short)
 
-      %h2 What's all this?
+      %h2 What's it all about?
       %ol
-        - blog.tags.each do |tag, articles|
+        - top_tags(blog, 10).each do |tag, articles|
           %li
             %a{:href => tag_path(tag)}
               = tag
               (#{articles.size})
 
-      %h2= link_to 'Colophon', '/colophon.html'
 
-      -#%h2 The archive
-      -#%ol
+      %h2 The archive.
+      %ol
         - blog.articles.group_by {|a| a.date.year }.each do |year, articles|
           %li
             %a{:href => blog_year_path(year)}
               = year
               (#{articles.size})
+
+      %h2= link_to 'The colophon.', '/colophon.html'
 
     = javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js'
     %script
