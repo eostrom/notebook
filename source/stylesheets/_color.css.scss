@@ -1,5 +1,5 @@
-$background-color: rgb(212, 200, 253);
-$header-color: rgb(245, 236, 222);
+$background-color: hsl(254%, 73%, 89%);
+$header-color: hsl(43, 53%, 92%);
 /*$header-color: rgb(245, 228, 201);*/
 $link-color: rgb(145, 114, 199);
 $text-color: rgb(48, 0, 57);
@@ -12,6 +12,10 @@ html {
 
 h1, h2, h3, h4, h5, h6 {
   color: $header-color;
+  a:link, a:visited {
+    //color: $link-color;
+    text-decoration: none;
+  }
 }
 
 a:link { color: $link-color; }
