@@ -14,7 +14,6 @@ probably better ways to do some of it. [Let me know!][contact]*
 
 In this post, I'll cover the initial setup. Future posts will be about
 more interesting things.
-
 READMORE
 
 ## Setting up.

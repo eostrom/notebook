@@ -16,7 +16,6 @@ In [part 1], we set up Node, Express, and Babel, some basic tools for
 writing our application. But we're going to do test-driven development
 (somewhat), so let's start by testing the most fundamental thing: Our
 app does something.
-
 READMORE
 
 ## Mmm, zombie mocha.

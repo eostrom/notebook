@@ -19,7 +19,6 @@ A longer-term fix would be to hack Dragonfly to support partial content,
 or not use Refinery resources for our MP3s. But for now, we're just
 serving the MP3s via a direct link to S3, using Dragonfly's
 [`remote_url`][remote_url] method.
-
 READMORE
 
 [refinery]: http://refinerycms.com/ "Refinery CMS: Ruby on Rails CMS that supports Rails 3"

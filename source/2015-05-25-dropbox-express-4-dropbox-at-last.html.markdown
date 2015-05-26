@@ -15,7 +15,6 @@ better ways to do some of it. [Let me know!][contact]*
 In [part 3], we wrote the simplest Express app I could think of. Now,
 let's write the simplest Express app I can think of that uses the
 Dropbox API. All it will do is count the number of files in a folder.
-
 READMORE
 
 ## An app test.

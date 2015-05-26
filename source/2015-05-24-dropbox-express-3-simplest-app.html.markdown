@@ -15,7 +15,6 @@ better ways to do some of it. [Let me know!][contact]*
 In [part 2], we wrote an acceptance test for the simplest app I could
 think of, but then we didn't write the app! What is wrong with us! Here,
 we'll rectify that injustice.
-
 READMORE
 
 ## The simplest app. 
