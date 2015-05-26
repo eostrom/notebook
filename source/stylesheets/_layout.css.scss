@@ -34,6 +34,16 @@ aside {
 
   @include media($mobile) {
     @include span-columns(12);
+
+    @media (min-width: 320px) {
+      @include columns(2);
+      section {
+        -webkit-column-break-inside: avoid;
+        column-break-inside: avoid;
+        page-break-inside: avoid;
+        padding-top: 0.1em; /* even out the columns on Firefox */
+      }
+    }
   }
 }
 
@@ -48,9 +58,10 @@ code {
   pre & {
     padding: 0;
   }
-}}
+}
 
 .pagination {
   @include clearfix;
   a.prev_page { float: left; }
   a.next_page { float: right; }
+}
