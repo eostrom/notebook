@@ -32,8 +32,7 @@ When you install express, use the `--save` flag, so it'll be installed
 when you deploy the app, too.
 
 (You might as well `git init`, grab a [.gitignore](gitignore), and commit
-the code at this point. If I were you, I'd commit at the end of each
-section.)
+the code at this point.)
 
 ## The next JavaScript.
 
