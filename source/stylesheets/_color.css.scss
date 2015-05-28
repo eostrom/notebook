@@ -23,11 +23,11 @@ a:visited { color: $article-background; }
 
 header {
   background: url(/images/Dirty_Graph_Paper_Texture_by_angelandspot.jpg)
-    100% 2%
     $header-color;
 
   h1 {
     @include transform(rotate(0.3deg));
+    text-shadow: 0 0 5px $header-color;
   }
 
   a:link, a:visited {
