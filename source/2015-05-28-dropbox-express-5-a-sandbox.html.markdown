@@ -3,7 +3,7 @@ supertitle: Dropbox Express with ECMAScript 6+
 subtitle: "Part 5: A sandbox."
 title: "Dropbox Express 5: A sandbox."
 date: 2015-05-28 21:31 UTC
-tags: node.js, express.js, es.next, dropbox, testing
+tags: dotenv, dropbox, node.js, testing 
 ---
 
 *This is how I built a simple server-side JavaScript app on top of the
@@ -20,7 +20,7 @@ READMORE
 ## Up and running.
 
 If you run `npm start` now, you'll get an error: "No API key supplied."
-We made our test load its configuration via `dotenv`, but we didn't
+We made our test load its configuration via [`dotenv`][dotenv], but we didn't
 make the application do it. Add this line to the top of `index.js`:
 
 ~~~
@@ -98,5 +98,6 @@ what's inside it.
 
 [contact]: #comments
 [part 4]: /2015/05/25/dropbox-express-4-dropbox-at-last.html
+[dotenv]: https://www.npmjs.com/package/dotenv
 [part-4-dropbox-app]: /2015/05/25/dropbox-express-4-dropbox-at-last.html#a-test-app 
 [dropbox app console]: https://www.dropbox.com/developers/apps

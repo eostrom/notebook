@@ -62,6 +62,18 @@ blockquote {
   color: $background-color;
 }
 
+.post_list {
+  color: $background-color;
+}
+
+div.tags {
+  color: $background-color;
+
+  a {
+    margin-left: 0.5em;
+  }
+}
+
 .pagination {
   a:link, a:visited {
     color: $link-color;

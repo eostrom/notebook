@@ -61,6 +61,19 @@ code {
   }
 }
 
+div.tags {
+  ul, li { display: inline; margin: 0; padding: 0; }
+  a {
+    margin-left: 0.4em;
+  }
+}
+
+.post_list {
+  &, li { margin: 0; }
+  padding: 0 1em 0 1.5em;
+  list-style: none;
+}
+
 .pagination {
   @include clearfix;
   a.prev_page { float: left; }

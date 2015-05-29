@@ -8,7 +8,7 @@
     = stylesheet_link_tag 'application'
     %title= current_page.title rescue "A notebook."
 
-  %body
+  %body{class: page_classes}
     %header
       %h1= link_to 'A notebook.', '/'
 

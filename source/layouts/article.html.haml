@@ -15,4 +15,12 @@
         %h3 #{format_date(date)}.
     ~ yield
 
+    - if current_page.respond_to? :tags
+      .tags
+        %b More posts:
+        %ul
+          = list_of(current_page.tags) do |tag|
+            = link_to "#{tag}", tag_path(tag)
+            = "(#{blog.tags[tag].count})"
+
   #comments= disqus
