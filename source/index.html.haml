@@ -8,6 +8,8 @@ pageable: true
       = link_to article.title, article
       %span= format_date(article.date, :short)
     ~ article.summary
+    - if article.summary != article.body
+      = link_to '...', article, class: 'readmore'
 - if paginate
   .pagination
     - if prev_page

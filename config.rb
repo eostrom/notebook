@@ -1,3 +1,5 @@
+require 'middleman-blog/truncate_html'
+
 ###
 # Blog settings
 ###
@@ -12,6 +14,14 @@ activate :blog do |blog|
   blog.layout = "article"
   # blog.summary_separator = /(READMORE)/
   # blog.summary_length = 250
+  blog.summary_generator = Proc.new do |article, rendered, length, ellipsis|
+    puts article.data.inspect
+    if article.data[:complete]
+      rendered
+    else
+      article.default_summary_generator(rendered, length, ellipsis)
+    end
+  end
   # blog.year_link = ":year.html"
   # blog.month_link = ":year/:month.html"
   # blog.day_link = ":year/:month/:day.html"

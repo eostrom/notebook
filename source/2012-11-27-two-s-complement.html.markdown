@@ -10,7 +10,10 @@ positive and negative numbers.
 
 ### Bits to digits
 
-In pure math, negative binary numbers are easy: -8 decimal is -1000 binary.
+In pure math, negative binary numbers are easy: -8 decimal is
+READMORE
+-1000 binary.
+
 But computers don't have a negative sign; they just have a bunch of switches that are either on or off. So we need a way to use those switches to talk about negative numbers.
 
 Suppose we have a world where the only numbers you can talk about are ones that fit in four bits.  0000, 0001, 0010, ... 1111.
