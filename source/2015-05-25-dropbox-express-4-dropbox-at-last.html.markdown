@@ -36,8 +36,8 @@ is empty.
 To use the Dropbox API, we need to register an app with Dropbox.
 Go to the [Dropbox App Console] and click the "Create App" button.
 Create a Dropbox API app, limited to its own folder. Call it whatever
-you like; I called mine "journal test". (Spoiler: Later we'll create
-a non-test app.)
+you like; I called mine "journal dev," because I knew what kind of app
+I was going to write.
 
 ## Configuration.
 
@@ -138,10 +138,11 @@ npm install --save dropbox
 Run `npm test`. It passes! Our folder is empty!
 
 We can't actually try it in the browser yet, because our development
-server (`index.js`) doesn't load the `dotenv` configuration. In part 5,
+server (`index.js`) doesn't load the `dotenv` configuration. In [part 5],
 we'll fix that, discover some gotchas, and write a better test.
 
 [contact]: #comments
 [part 3]: /2015/05/24/dropbox-express-3-simplest-app.html
 [dropbox app console]: https://www.dropbox.com/developers/apps
 [dotenv]: https://www.npmjs.com/package/dotenv
+[part 5]: /2015/05/28/dropbox-express-5-a-sandbox.html

@@ -15,7 +15,6 @@ activate :blog do |blog|
   # blog.summary_separator = /(READMORE)/
   # blog.summary_length = 250
   blog.summary_generator = Proc.new do |article, rendered, length, ellipsis|
-    puts article.data.inspect
     if article.data[:complete]
       rendered
     else
