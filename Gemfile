@@ -12,3 +12,4 @@ gem 'neat'
 gem 'nokogiri' # for blog post summaries
 
 gem 'rack-contrib'
+gem 'puma'
