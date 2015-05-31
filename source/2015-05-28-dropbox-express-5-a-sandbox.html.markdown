@@ -93,7 +93,7 @@ git ignore .env.test
 
 `npm test` passes again, because your new test app's folder is empty.
 `npm start` and your dev environment counts files in the dev folder.
-But file counts are boring. In part 6, we'll choose a file and see
+But file counts are boring. In [part 6], we'll choose a file and see
 what's inside it.
 
 [contact]: #comments
@@ -101,3 +101,4 @@ what's inside it.
 [dotenv]: https://www.npmjs.com/package/dotenv
 [part-4-dropbox-app]: /2015/05/25/dropbox-express-4-dropbox-at-last.html#a-test-app 
 [dropbox app console]: https://www.dropbox.com/developers/apps
+[part 6]: /2015/05/30/dropbox-express-6-double-dropbox.html
