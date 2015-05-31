@@ -91,19 +91,29 @@ helpers do
   def top_tags(blog, count)
     blog.tags.sort_by { |(tag, articles)| -articles.size }.first(count)
   end
+
+  def absolute_url_for(*params)
+    port_part = ":#{port}" unless port == 80
+
+    "http://#{host}#{port_part}#{url_for(*params)}"
+  end
 end
 
 set :css_dir, 'stylesheets'
-
 set :js_dir, 'javascripts'
-
 set :images_dir, 'images'
+
+set :host, 'notebook.erikostrom.com'
+set :port, 80
 
 # Build-specific configuration
 configure :development do
   activate :disqus do |d|
     d.shortname = "anotebook-development"
   end
+
+  set :host, 'localhost'
+  set :port, 4567
 end
 
 configure :build do
