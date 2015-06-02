@@ -145,3 +145,6 @@ DEPENDENCIES
   nokogiri
   puma
   rack-contrib
+
+BUNDLED WITH
+   1.10.2
