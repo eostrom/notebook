@@ -14,5 +14,12 @@ aside {
   .pair img {
     width: 95%;
   }
+
+  .feed-icon {
+    height: 22px;
+    width: 22px;
+    position: relative;
+    top: 2px; /* there's probably a better way to do this... */
+  }
 }
 

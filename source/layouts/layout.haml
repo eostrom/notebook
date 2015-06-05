@@ -59,7 +59,12 @@
                 = year
                 (#{articles.size})
 
+      %section
         %h2= link_to 'The colophon.', '/colophon.html'
+        %h2
+          = link_to '/feed.xml' do
+            The feed.
+            = image_tag 'wikipedia-feed-icon.svg', class: 'feed-icon'
 
     = javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js'
     %script
