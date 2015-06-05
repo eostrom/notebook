@@ -22,7 +22,7 @@ An obvious way to translate between those four bits and integers is to, you know
 
 The problem with that is, now you have no way of talking about negative integers at all.
 
-So another way of translating is: you say, okay, everything that starts with a 0, we do that way.  0000 = 0 up to 0111 = 7.  Then you wrap around to 1000 = -16, 1001 = -8, 1010 = -7, .... 1111 = -1. That's Two's Complement.
+So another way of translating is: you say, okay, everything that starts with a 0, we do that way.  0000 = 0 up to 0111 = 7.  Then you wrap around to 1000 = -8, 1001 = -7, 1010 = -6, .... 1111 = -1. That's Two's Complement.
 
 Another way of looking at it is like this: In regular binary numbers, looking from left to right, the bits stand for 8, 4, 2, 1. In Two's Complement, the leftmost digit doesn't stand for 8, it stands for *negative* 8.  So 1010 = -8 + 0 + 2 + 0 = -6.
 
