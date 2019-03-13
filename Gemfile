@@ -14,6 +14,7 @@ gem 'nokogiri' # for blog post summaries
 
 gem 'rack-contrib'
 gem 'puma'
+gem 'rake'
 
 group :development do
   gem 'byebug'
