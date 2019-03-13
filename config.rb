@@ -82,10 +82,18 @@ page "/feed.xml", :layout => false
 helpers do
   def format_date(date, how = :long)
     if how == :short
-      date.strftime('%b&nbsp;%e')
+      date.strftime('%b %e')
     else
-      date.strftime('%b&nbsp;%e&nbsp;%Y')
+      date.strftime('%b %e %Y')
     end
+  end
+
+  def date_tag(date, how = :long)
+    content_tag(
+      'time', format_date(date, how).gsub(' ', '&nbsp;'),
+      datetime: date.to_s,
+      title: format_date(date)
+    )
   end
 
   def top_tags(blog, count)

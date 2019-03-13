@@ -6,7 +6,7 @@ pageable: true
   %article
     %h2
       = link_to article.title, article
-      %span= format_date(article.date, :short)
+      %span= date_tag(article.date, :short)
     ~ article.summary
     - if article.summary != article.body
       = link_to '...', article, class: 'readmore'

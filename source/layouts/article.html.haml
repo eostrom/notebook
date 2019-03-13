@@ -12,7 +12,7 @@
           %br
           = subtitle
       - if date
-        %h3 #{format_date(date)}.
+        %h3 #{date_tag(date)}.
     ~ yield
 
     - if current_page.respond_to? :tags
