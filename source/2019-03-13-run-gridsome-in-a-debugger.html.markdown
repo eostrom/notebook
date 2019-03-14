@@ -6,8 +6,8 @@ tags: javascript, node.js
 New web site coming soon. Meanwhile, it's time to start writing things
 down again.
 
-Here's how to debug [Gridsome](gridsome), the Vue-based static site
-generator, in JetBrains IDEs such as WebStorm. (I'm using RubyMine,
+Here's how to debug [Gridsome][], the Vue-based static site
+generator, in [JetBrains][] IDEs such as WebStorm. (I'm using RubyMine,
 but it should be the same.)
 
 READMORE
@@ -19,13 +19,21 @@ the `develop` script is defined. Replace the definition with this one:
     "develop": "node $NODE_DEBUG_OPTION node_modules/.bin/gridsome develop",
 ~~~
 
-Voila.
+Voila. Now you can run it in debug mode by clicking the green "Run Script"
+triangle and then "Debug `develop`".
 
-$NODE_DEBUG_OPTION seems to be specific to JetBrains products, a way to
-support old versions of Node. If you're using another debugger (like
-Visual Studio Code), or if you're running Node 7+ (*very likely*),
-you can pass the flag directly:
+$NODE_DEBUG_OPTION seems to be specific to JetBrains products, and has a
+different value depending on whether you're running the script in the
+debugger. If you're using another debugger, you can pass the flag
+explicitly:
 
-~~~javascript
-    "develop": "node --inspect node_modules/.bin/gridsome develop",
+~~~sh
+node --inspect node_modules/.bin/gridsome develop
 ~~~
+
+Similar techniques apply for [Nuxt.js][] and other
+Node servers.
+
+[Gridsome]: https://gridsome.org
+[JetBrains]: https://www.jetbrains.com
+[Nuxt.js]: https://nuxtjs.org
